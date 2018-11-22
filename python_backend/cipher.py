@@ -2,18 +2,27 @@
 cipher code
 date: 11/15/2018
 '''
+
+
+
 alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+alpha = list(alphabet)
 
-class encrypt_code:
+def shift_letters(n):
+    reverse = alphabet[::-1]
+    return alphabet[n:] + reverse[len(alphabet) - n: len(alphabet) + 1]
 
-    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-    def shift_letters(n):
-        reverse = alphabet[::-1]
-        return alphabet[n:] + reverse[len(alphabet) - n: len(alphabet) + 1]
-
-    def key()
-
-    def encrypt(given, shift_cipher):
-
-        for i in given
+def encrypt(text, n):
+    text = text.upper()
+    given_list = list(text)
+    alphabet_list = list(alphabet)
+    new_text = []
+    for i in given_list:
+        if i == ' ':
+            new_text += [' ']
+        for x in alphabet_list:
+            if i == x:
+                new_text += [alphabet_list[alphabet_list.index(x) + n]]
+    new_string = ''.join(new_text)
+    return new_string
