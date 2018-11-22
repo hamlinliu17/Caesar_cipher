@@ -8,11 +8,6 @@ date: 11/15/2018
 alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 alpha = list(alphabet)
 
-def shift_letters(n):
-    reverse = alphabet[::-1]
-    return alphabet[n:] + reverse[len(alphabet) - n: len(alphabet) + 1]
-
-
 def encrypt(text, n):
     text = text.upper()
     given_list = list(text)
