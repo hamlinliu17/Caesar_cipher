@@ -3,6 +3,19 @@
 list of words
 '''
 
+
+def compare(target, list1):
+    for i in list1:
+        if i == target:
+            index_num = list1.index(i)
+    if not(target in list1):
+        return
+    return index_num
+
+print(compare(1, [2, 3, 1]))
+
+
+
 list_words = ['a',
 'ability',
 'able',
