@@ -27,8 +27,7 @@ def encrypt(text, n):
     new_string = ''.join(new_text)
     return new_string
 
-test = encrypt('hello', 1)
-print(test)
+
 
 def decrypt(text, key):
     text = text.upper()
@@ -43,5 +42,3 @@ def decrypt(text, key):
                 new_text += [alphabet_list[alphabet_list.index(x) - key]]
     new_string = ''.join(new_text)
     return new_string
-
-print(decrypt(test, 1))
