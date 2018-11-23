@@ -12,7 +12,7 @@ def compare(target, list1):
         return
     return index_num
 
-print(compare(1, [2, 3, 1]))
+
 
 
 
