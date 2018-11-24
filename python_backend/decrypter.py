@@ -20,4 +20,3 @@ def decrypter(text):
 
 
 k = encrypt('attack at dawn', 8)
-print(decrypt(k, decrypter(k)))
