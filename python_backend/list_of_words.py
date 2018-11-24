@@ -15,8 +15,6 @@ def compare(target, list1):
 
 
 
-
-
 list_words = ['a',
 'ability',
 'able',

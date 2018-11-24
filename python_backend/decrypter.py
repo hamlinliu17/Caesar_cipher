@@ -12,9 +12,12 @@ def decrypter(text):
     decrypt_pool = []
     for i in range (1, 27):
         decrypt_pool += [decrypt(list_encrypt[0], i)]
-    for z in decrypt_pool:
-        if compare(z, list_words) >= 0:
-            return compare(z, list_words)
+    for i in decrypt_pool:
+        index_num = decrypt_pool.index(i)
+        i = i.lower()
+        if compare(i, list_words) >= 0:
+            return index_num + 1
 
 
-print(decrypter('KHOOR WKHUH'))
+k = encrypt('attack at dawn', 8)
+print(decrypt(k, decrypter(k)))

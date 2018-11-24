@@ -26,6 +26,7 @@ def encrypt(text, n):
                 new_text += [alphabet_list[alphabet_list.index(x) + n]]
     new_string = ''.join(new_text)
     return new_string
+print(encrypt('attack at dawn', 4))
 
 def decrypt(text, key):
     text = text.upper()
