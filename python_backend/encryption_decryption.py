@@ -27,8 +27,6 @@ def encrypt(text, n):
     new_string = ''.join(new_text)
     return new_string
 
-
-
 def decrypt(text, key):
     text = text.upper()
     given_list = list(text)

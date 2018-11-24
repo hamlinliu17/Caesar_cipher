@@ -7,10 +7,11 @@ list of words
 def compare(target, list1):
     for i in list1:
         if i == target:
-            index_num = list1.index(i)
+            return list1.index(i)
     if not(target in list1):
-        return 
-    return index_num
+        return -1
+
+
 
 
 
