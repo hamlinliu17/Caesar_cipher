@@ -16,7 +16,7 @@ def shift_letters(n):
 def encrypt(text, n):
     text = text.upper()
     given_list = list(text)
-    alphabet_list = shift_letters()
+    alphabet_list = list(alphabet)
     new_text = []
     for i in given_list:
         if i == ' ':
@@ -26,7 +26,8 @@ def encrypt(text, n):
                 new_text += [alphabet_list[alphabet_list.index(x) + n]]
     new_string = ''.join(new_text)
     return new_string
-print(encrypt('attack at dawn', ))
+
+print(encrypt('attack at dawn', 3))
 
 def decrypt(text, key):
     text = text.upper()

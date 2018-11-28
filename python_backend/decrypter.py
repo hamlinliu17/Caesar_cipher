@@ -8,7 +8,6 @@ utilizes a list of 1000 english words ()
 '''
 
 def decrypter(text):
-    list_encrypt = text.split()
     decrypt_pool = []
     for i in range (1, 27):
         decrypt_pool += [decrypt(list_encrypt[0], i)]
@@ -19,4 +18,4 @@ def decrypter(text):
             return index_num + 1
 
 
-k = encrypt('attack at dawn', 8)
+k = encrypt('attack at dawn', 3)
