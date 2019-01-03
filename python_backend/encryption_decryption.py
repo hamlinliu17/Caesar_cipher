@@ -27,21 +27,9 @@ def encrypt(text, n):
     new_string = ''.join(new_text)
     return new_string
 
-print(encrypt('attack at dawn', 6))
+print(encrypt('attack at dawn', 7))
 
 def decrypt(text, key):
     text = text.upper()
     given_list = list(text)
-    alphabet_list = list(alphabet)
-    shifted_alphabet = list(shift_letters(-key))
-    new_text = []
-    for i in given_list:
-        if i == ' ':
-            new_text += [' ']
-        for x in alphabet_list:
-            if i == x:
-                new_text += [shifted_alphabet[alphabet_list.index(x)]]
-    new_string = ''.join(new_text)
-    return new_string
-
-print(decrypt('GZZGIQ GZ JGDT', 6))
+    shifted
