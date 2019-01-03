@@ -27,7 +27,7 @@ def encrypt(text, n):
     new_string = ''.join(new_text)
     return new_string
 
-print(encrypt('attack at dawn', 1))
+print(encrypt('attack at dawn', 6))
 
 def decrypt(text, key):
     text = text.upper()
@@ -44,4 +44,4 @@ def decrypt(text, key):
     new_string = ''.join(new_text)
     return new_string
 
-#print(decrypt('attack at dawn', 1))
+print(decrypt('GZZGIQ GZ JGDT', 6))
